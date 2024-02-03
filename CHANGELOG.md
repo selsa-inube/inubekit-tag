@@ -1,3 +1,25 @@
+# v0.0.2 (Fri Feb 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(vite.config.json): add rollupOptions (carlos3k11@gmail.com)
+- feat: update @inubekit/text to version 1.3.0 and add dist/index.es.d.ts to files (carlos3k11@gmail.com)
+- refactor: remove @storybook/addon-onboarding from Storybook configuration (carlos3k11@gmail.com)
+- feat(package.json): add vite-plugin-dts (carlos3k11@gmail.com)
+- feat: add Tag component and its stories (carlos3k11@gmail.com)
+- feat: add styled-components module declaration and update tsconfig.json (carlos3k11@gmail.com)
+- feat: udd disableTelemetry and defaultName options to Storybook config (carlos3k11@gmail.com)
+- feat: install inubekeit dependencies (carlos3k11@gmail.com)
+- refactor(package.json): update name to @inubekit/tag (carlos3k11@gmail.com)
+- Initial commit ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### Authors: 2
+
+- Andres Babativa (carlos3k11@gmail.com)
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v0.0.1 (Wed Jan 17 2024)
 
 #### ⚠️ Pushed to `main`

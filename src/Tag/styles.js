@@ -1,8 +1,7 @@
 import styled from "styled-components";
-
 import { inube } from "@inubekit/foundations";
 
-export const StyledTag = styled.div`
+const StyledTag = styled.div`
   display: inline-block;
   border-radius: 4px;
   padding: 0 4px;
@@ -10,3 +9,4 @@ export const StyledTag = styled.div`
     theme?.tag?.[$appearance]?.strong?.background?.color ||
     inube.tag[$appearance].strong.background.color};
 `;
+export { StyledTag };

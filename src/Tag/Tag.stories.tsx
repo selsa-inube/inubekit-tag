@@ -8,7 +8,7 @@ const story = {
   argTypes: props,
 };
 
-export const Default = (args: ITag) => <Tag {...args} />;
+const Default = (args: ITag) => <Tag {...args} />;
 
 Default.args = {
   appearance: "primary",
@@ -16,3 +16,4 @@ Default.args = {
 };
 
 export default story;
+export { Default };

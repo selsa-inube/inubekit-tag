@@ -1,7 +1,7 @@
 const appearances = [
   "primary",
   "success",
-  "error",
+  "danger",
   "warning",
   "help",
   "dark",
@@ -9,9 +9,9 @@ const appearances = [
   "light",
 ] as const;
 
-export type Appearance = (typeof appearances)[number];
+type Appearance = (typeof appearances)[number];
 
-export const parameters = {
+const parameters = {
   docs: {
     description: {
       component: "Icons used to communicate actions and decisions graphically",
@@ -19,7 +19,7 @@ export const parameters = {
   },
 };
 
-export const props = {
+const props = {
   label: {
     description: "Controls the text that the tag will display",
   },
@@ -29,3 +29,6 @@ export const props = {
     description: "Controls the background color of the tag",
   },
 };
+
+export { parameters, props };
+export type { Appearance };

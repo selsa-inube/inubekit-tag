@@ -4,12 +4,12 @@ import { Text } from "@inubekit/text";
 
 const darkTextAppearances = ["warning", "gray", "light"];
 
-export interface ITagProps {
+export interface ITag {
   appearance: Appearance;
   label: string;
 }
 
-const Tag = (props: ITagProps) => {
+const Tag = (props: ITag) => {
   const { appearance, label } = props;
 
   return (

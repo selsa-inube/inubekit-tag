@@ -1,22 +1,32 @@
 import { StyledTag } from "./styles";
-import { Appearance } from "./props";
+import { Appearance, Weight } from "./props";
 import { Text } from "@inubekit/text";
 
 const darkTextAppearances = ["warning", "gray", "light"];
 
+const getTextAppearance = (
+  appearance: Appearance,
+  weight: Weight
+): Appearance => {
+  if (darkTextAppearances.includes(appearance)) return "dark";
+  if (weight !== "normal") return "light";
+  return appearance;
+};
+
 interface ITag {
   appearance: Appearance;
+  weight: Weight;
   label: string;
 }
 
 const Tag = (props: ITag) => {
-  const { appearance, label } = props;
+  const { appearance, weight, label } = props;
 
   return (
-    <StyledTag $appearance={appearance}>
+    <StyledTag $appearance={appearance} $weight={weight}>
       <Text
         type="label"
-        appearance={darkTextAppearances.includes(appearance) ? "dark" : "light"}
+        appearance={getTextAppearance(appearance, weight)}
         size="small"
         textAlign="start"
       >

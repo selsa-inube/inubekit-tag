@@ -9,7 +9,11 @@ const appearances = [
   "light",
 ] as const;
 
+const weight = ["normal", "strong"] as const;
+
 type Appearance = (typeof appearances)[number];
+
+type Weight = (typeof weight)[number];
 
 const parameters = {
   docs: {
@@ -28,7 +32,12 @@ const props = {
     options: appearances,
     description: "Controls the background color of the tag",
   },
+  weight: {
+    control: "select",
+    options: weight,
+    description: "Controls the color load that the label receives",
+  },
 };
 
 export { parameters, props };
-export type { Appearance };
+export type { Appearance, Weight };

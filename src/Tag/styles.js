@@ -6,7 +6,7 @@ const StyledTag = styled.div`
   border-radius: 4px;
   padding: 0 4px;
   background-color: ${({ theme, $appearance, $weight }) =>
-    (theme?.tag?.[$appearance]?.[$weight]?.background?.color && black) ||
+    theme?.tag?.[$appearance]?.[$weight]?.background?.color ||
     inube.tag[$appearance][$weight].background.color};
 `;
 export { StyledTag };

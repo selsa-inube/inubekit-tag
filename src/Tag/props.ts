@@ -9,11 +9,11 @@ const appearances = [
   "light",
 ] as const;
 
-const weight = ["normal", "strong"] as const;
+const weights = ["normal", "strong"] as const;
 
 type Appearance = (typeof appearances)[number];
 
-type Weight = (typeof weight)[number];
+type Weights = (typeof weights)[number];
 
 const parameters = {
   docs: {
@@ -34,10 +34,10 @@ const props = {
   },
   weight: {
     control: "select",
-    options: weight,
+    options: weights,
     description: "Controls the color load that the label receives",
   },
 };
 
 export { parameters, props };
-export type { Appearance, Weight };
+export type { Appearance, Weights };

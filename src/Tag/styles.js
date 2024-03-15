@@ -5,8 +5,12 @@ const StyledTag = styled.div`
   display: inline-block;
   border-radius: 4px;
   padding: 0 4px;
-  background-color: ${({ theme, $appearance, $weight }) =>
-    theme?.tag?.[$appearance]?.[$weight]?.background?.color ||
-    inube.tag[$appearance][$weight].background.color};
+  background-color: ${({ theme, $weight, $appearance }) =>
+    $weight === "regular"
+      ? theme?.tag?.[$appearance]?.normal.background.color ||
+        inube.tag[$appearance].normal.background.color
+      : theme?.tag?.[$appearance]?.strong.background.color ||
+        inube.tag[$appearance].normal.background.color.appearance};
 `;
+
 export { StyledTag };

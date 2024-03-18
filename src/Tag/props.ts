@@ -9,7 +9,7 @@ const appearances = [
   "light",
 ] as const;
 
-const weights = ["regular", "strong"] as const;
+const weights = ["normal", "strong"] as const;
 
 type Appearance = (typeof appearances)[number];
 

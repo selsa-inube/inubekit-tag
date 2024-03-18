@@ -13,7 +13,7 @@ const Default = (args: ITag) => <Tag {...args} />;
 Default.args = {
   appearance: "primary",
   label: "Tag",
-  weight: "regular",
+  weight: "normal",
 };
 
 export default story;

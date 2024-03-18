@@ -6,7 +6,7 @@ const StyledTag = styled.div`
   border-radius: 4px;
   padding: 0 4px;
   background-color: ${({ theme, $weight, $appearance }) =>
-    $weight === "regular"
+    $weight === "normal"
       ? theme?.tag?.[$appearance]?.normal.background.color ||
         inube.tag[$appearance].normal.background.color
       : theme?.tag?.[$appearance]?.strong.background.color ||

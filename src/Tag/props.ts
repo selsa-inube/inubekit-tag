@@ -12,7 +12,7 @@ const appearances = [
 const weights = ["normal", "strong"] as const;
 
 type Appearance = (typeof appearances)[number];
-
+type Weight = (typeof weights)[number];
 const parameters = {
   docs: {
     description: {
@@ -38,4 +38,4 @@ const props = {
 };
 
 export { parameters, props };
-export type { Appearance };
+export type { Appearance, Weight };

@@ -5,23 +5,20 @@ import { inube } from "@inubekit/foundations";
 
 interface ITag {
   appearance: Appearance;
-  weight: Weight;
+  weight?: Weight;
   label: string;
 }
 
 const Tag = (props: ITag) => {
-  const { appearance, weight, label } = props;
+  const { appearance, weight = "normal", label } = props;
 
   return (
     <StyledTag $appearance={appearance} $weight={weight}>
       <Text
         type="label"
         appearance={
-          weight === "normal"
-            ? (inube.tag[appearance].normal.content
-                .apparence as keyof typeof inube.tag)
-            : (inube.tag[appearance].strong.content
-                .apparence as keyof typeof inube.tag)
+          inube.tag[appearance][weight].content
+            .apparence as keyof typeof inube.tag
         }
         size="small"
         textAlign="start"

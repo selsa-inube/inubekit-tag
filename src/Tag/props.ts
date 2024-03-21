@@ -11,8 +11,8 @@ const appearances = [
 
 const weights = ["normal", "strong"] as const;
 
-type Appearance = (typeof appearances)[number];
-type Weight = (typeof weights)[number];
+type ITagAppearance = (typeof appearances)[number];
+type ITagWeight = (typeof weights)[number];
 const parameters = {
   docs: {
     description: {
@@ -38,4 +38,4 @@ const props = {
 };
 
 export { parameters, props };
-export type { Appearance, Weight };
+export type { ITagAppearance, ITagWeight };

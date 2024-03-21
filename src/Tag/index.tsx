@@ -1,11 +1,11 @@
 import { StyledTag } from "./styles";
-import { Appearance, Weight } from "./props";
+import { ITagAppearance, ITagWeight } from "./props";
 import { Text } from "@inubekit/text";
 import { inube } from "@inubekit/foundations";
 
 interface ITag {
-  appearance: Appearance;
-  weight?: Weight;
+  appearance: ITagAppearance;
+  weight?: ITagWeight;
   label: string;
 }
 

@@ -18,7 +18,7 @@ const Tag = (props: ITag) => {
         type="label"
         appearance={
           inube.tag[appearance][weight].content
-            .apparence as keyof typeof inube.tag
+            .appearance as keyof typeof inube.tag
         }
         size="small"
         textAlign="start"

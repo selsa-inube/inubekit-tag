@@ -1,3 +1,25 @@
+# v2.0.0 (Mon Apr 01 2024)
+
+#### 💥 Breaking Change
+
+- Refactor component to use new token structure [#2](https://github.com/selsa-inube/inubekit-tag/pull/2) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### 🐛 Bug Fix
+
+- adjust publish `<Tag />` inubekit/tag repo [#1](https://github.com/selsa-inube/inubekit-tag/pull/1) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### 🔩 Dependency Updates
+
+- Update inubekit/tag to storybook v8 [#3](https://github.com/selsa-inube/inubekit-tag/pull/3) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 3
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v0.0.2 (Fri Feb 02 2024)
 
 #### ⚠️ Pushed to `main`

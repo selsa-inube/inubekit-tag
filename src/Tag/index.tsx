@@ -1,22 +1,25 @@
 import { StyledTag } from "./styles";
-import { Appearance } from "./props";
+import { ITagAppearance, ITagWeight } from "./props";
 import { Text } from "@inubekit/text";
+import { inube } from "@inubekit/foundations";
 
-const darkTextAppearances = ["warning", "gray", "light"];
-
-export interface ITagProps {
-  appearance: Appearance;
+interface ITag {
+  appearance: ITagAppearance;
+  weight?: ITagWeight;
   label: string;
 }
 
-const Tag = (props: ITagProps) => {
-  const { appearance, label } = props;
+const Tag = (props: ITag) => {
+  const { appearance, weight = "normal", label } = props;
 
   return (
-    <StyledTag $appearance={appearance}>
+    <StyledTag $appearance={appearance} $weight={weight}>
       <Text
         type="label"
-        appearance={darkTextAppearances.includes(appearance) ? "dark" : "light"}
+        appearance={
+          inube.tag[appearance][weight].content
+            .appearance as keyof typeof inube.tag
+        }
         size="small"
         textAlign="start"
       >
@@ -27,3 +30,4 @@ const Tag = (props: ITagProps) => {
 };
 
 export { Tag };
+export type { ITag };

@@ -1,7 +1,7 @@
 const appearances = [
   "primary",
   "success",
-  "error",
+  "danger",
   "warning",
   "help",
   "dark",
@@ -9,9 +9,11 @@ const appearances = [
   "light",
 ] as const;
 
-export type Appearance = (typeof appearances)[number];
+const weights = ["normal", "strong"] as const;
 
-export const parameters = {
+type ITagAppearance = (typeof appearances)[number];
+type ITagWeight = (typeof weights)[number];
+const parameters = {
   docs: {
     description: {
       component: "Icons used to communicate actions and decisions graphically",
@@ -19,7 +21,7 @@ export const parameters = {
   },
 };
 
-export const props = {
+const props = {
   label: {
     description: "Controls the text that the tag will display",
   },
@@ -28,4 +30,12 @@ export const props = {
     options: appearances,
     description: "Controls the background color of the tag",
   },
+  weight: {
+    control: "select",
+    options: weights,
+    description: "Controls the color load that the label receives",
+  },
 };
+
+export { parameters, props };
+export type { ITagAppearance, ITagWeight };

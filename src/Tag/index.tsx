@@ -14,15 +14,9 @@ interface ITag {
 const Tag = (props: ITag) => {
   const { appearance, weight = "normal", label } = props;
   const theme: typeof inube = useContext(ThemeContext);
-  const textAppearance = (
-    appearance: ITextAppearance,
-    weight: ITagWeight,
-  ): ITextAppearance => {
-    return (
-      (theme?.tag?.[appearance][weight]?.content
-        ?.appearance as keyof typeof theme.tag) ||
-      inube.tag[appearance][weight].content.appearance
-    );
+  const textAppearance = (appearance: ITextAppearance, weight: ITagWeight) => {
+    return (theme?.tag?.[appearance][weight]?.content?.appearance ||
+      inube.tag[appearance][weight].content.appearance) as ITextAppearance;
   };
 
   return (

@@ -15,10 +15,13 @@ export default defineConfig({
       external: [
         "react",
         "react-dom",
+        "react-icons/md",
         "styled-components",
         "react/jsx-runtime",
         "@inubekit/foundations",
         "@inubekit/text",
+        "@inubekit/icon",
+        "@inubekit/stack",
       ],
       output: {
         globals: {

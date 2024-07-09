@@ -50,6 +50,7 @@ const Tag = (props: ITag) => {
           appearance={textAppearance(appearance, weight)}
           size="small"
           textAlign="start"
+          weight="bold"
         >
           {label}
         </Text>

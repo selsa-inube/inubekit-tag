@@ -1,3 +1,15 @@
+# v3.19.1 (Wed Aug 21 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Update package.json ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v3.19.0 (Wed Aug 21 2024)
 
 #### 🚀 Enhancement

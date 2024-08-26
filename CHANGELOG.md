@@ -1,3 +1,15 @@
+# v3.21.0 (Mon Aug 26 2024)
+
+#### 🚀 Enhancement
+
+- Add `id` Prop to Enable Component Management [#30](https://github.com/selsa-inube/inubekit-tag/pull/30) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v3.20.0 (Fri Aug 23 2024)
 
 #### 🚀 Enhancement

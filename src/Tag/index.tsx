@@ -10,6 +10,7 @@ import { Stack } from "@inubekit/stack";
 
 interface ITag {
   appearance: ITagAppearance;
+  id?: string;
   weight?: ITagWeight;
   label: string;
   removable?: boolean;

@@ -1,3 +1,15 @@
+# v3.27.0 (Mon Sep 02 2024)
+
+#### 🚀 Enhancement
+
+- Update foundations dependency to latest version [#38](https://github.com/selsa-inube/inubekit-tag/pull/38) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v3.26.0 (Mon Sep 02 2024)
 
 #### 🚀 Enhancement

@@ -1,3 +1,15 @@
+# v3.35.0 (Wed Sep 25 2024)
+
+#### 🚀 Enhancement
+
+- Auto-merge PR [#48](https://github.com/selsa-inube/inubekit-tag/pull/48) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v3.34.0 (Mon Sep 23 2024)
 
 #### 🚀 Enhancement

@@ -1,3 +1,15 @@
+# v3.36.0 (Fri Sep 27 2024)
+
+#### 🚀 Enhancement
+
+- Move tag tokens from foundations to component [#49](https://github.com/selsa-inube/inubekit-tag/pull/49) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v3.35.0 (Wed Sep 25 2024)
 
 #### 🚀 Enhancement

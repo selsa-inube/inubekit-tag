@@ -1,12 +1,12 @@
 import { StyledTag } from "./styles";
 import { ITagAppearance, ITagWeight } from "./props";
 import { ITextAppearance, Text } from "@inubekit/text";
-import { inube } from "@inubekit/foundations";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { Icon } from "@inubekit/icon";
 import { MdClear } from "react-icons/md";
 import { Stack } from "@inubekit/stack";
+import { tokens } from "./Tokens/tokens";
 
 interface ITag {
   appearance: ITagAppearance;
@@ -25,10 +25,10 @@ const Tag = (props: ITag) => {
     removable = false,
     onClose,
   } = props;
-  const theme: typeof inube = useContext(ThemeContext);
+  const theme = useContext(ThemeContext) as { tag: typeof tokens };
   const textAppearance = (appearance: ITextAppearance, weight: ITagWeight) => {
     return (theme?.tag?.[appearance][weight]?.content?.appearance ||
-      inube.tag[appearance][weight].content.appearance) as ITextAppearance;
+      tokens[appearance][weight].content.appearance) as ITextAppearance;
   };
 
   const interceptonClose = (e: React.MouseEvent<Element, MouseEvent>) => {
@@ -61,7 +61,7 @@ const Tag = (props: ITag) => {
             appearance={textAppearance(appearance, weight)}
             icon={<MdClear />}
             size="11px"
-          ></Icon>
+          />
         )}
       </Stack>
     </StyledTag>
